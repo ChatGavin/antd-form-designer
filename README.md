@@ -6,6 +6,8 @@ Antd Form Designer 是一个基于 Ant Design 的表单设计器, 旨在帮助�
 
 预览地址: [https://designer.gavin.chat](https://designer.gavin.chat)
 
+问题记录: [https://j37q60tldv.feishu.cn/docx/T1oedmX85oOvwexPrYMcRAjfnvh?from=from_copylink](https://j37q60tldv.feishu.cn/docx/T1oedmX85oOvwexPrYMcRAjfnvh?from=from_copylink)
+
 ## 功能特性
 
 - **实时预览**: 在设计过程中实时预览表单效果.
