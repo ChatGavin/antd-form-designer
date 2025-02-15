@@ -9,6 +9,8 @@
   },
   "dependencies": {
     "antd": "^5.24.0",
+    "mobx": "^6.13.6",
+    "mobx-react-lite": "^4.1.0",
     "normalize.css": "^8.0.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
