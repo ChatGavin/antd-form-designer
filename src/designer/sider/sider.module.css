@@ -4,6 +4,7 @@
   user-select: none;
   position: relative;
   background: #fff;
+  box-shadow: 1px 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .siderContent {
