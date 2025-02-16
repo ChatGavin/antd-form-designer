@@ -1,0 +1,8 @@
+.header {
+  background: #fff;
+  padding: 0 16px;
+  border-bottom: 1px solid #f0f0f0;
+  position: relative;
+  z-index: 200; /* 提高 z-index 值 */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05); /* 添加轻微阴影增强层级感 */
+}

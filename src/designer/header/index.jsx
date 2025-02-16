@@ -1,19 +1,10 @@
 import { Layout } from "antd";
+import styles from "./header.module.css";
 
 const { Header } = Layout;
 
 const DesignerHeader = () => {
-  return (
-    <Header
-      style={{
-        background: "#fff",
-        padding: "0 16px",
-        borderBottom: "1px solid #f0f0f0",
-      }}
-    >
-      表单设计器
-    </Header>
-  );
+  return <Header className={styles.header}>表单设计器</Header>;
 };
 
 export default DesignerHeader;
