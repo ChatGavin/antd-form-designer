@@ -1,0 +1,18 @@
+.container {
+  width: 300px;
+  height: 100%;
+  border-left: 1px dashed #e8e8e8;
+  background: #fff;
+}
+
+.header {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 16px;
+  border-bottom: 1px dotted #f0f0f0;
+  color: #333333;
+}
+
+.content {
+  padding: 16px;
+}
