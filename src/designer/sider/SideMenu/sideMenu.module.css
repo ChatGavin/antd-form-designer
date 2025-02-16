@@ -2,7 +2,7 @@
   height: 100%;
   overflow: hidden; /* 改为 hidden，防止任何方向的滚动 */
   width: 50px;
-  border-right: 1px dashed #e8e8e8; /* 改回实线，保持 1px */
+  border-right: 1px dashed #e8e8e8; /* 中层使用中等深度的颜色 */
   background-color: #fff; /* 改为白色背景 */
   flex-shrink: 0; /* 防止 flex 布局下被压缩 */
   position: relative; /* 添加定位上下文 */
