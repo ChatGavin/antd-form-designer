@@ -2,6 +2,14 @@
   border-right: 1px solid #f0f0f0;
   transition: none;
   user-select: none;
+  position: relative;
+  background: #fff;
+}
+
+.siderContent {
+  display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .resizeHandle {
@@ -25,4 +33,4 @@
 
 .resizeHandleIdle {
   background: transparent;
-} 
+}

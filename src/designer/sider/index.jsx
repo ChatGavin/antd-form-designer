@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import React from "react";
 import styles from "./sider.module.css";
 import classNames from "classnames";
+import SideMenu from "./SideMenu";
+import SideContent from "./SideContent";
 
 const { Sider } = Layout;
 
@@ -57,7 +59,10 @@ const DesignerSider = observer(() => {
   return (
     <>
       <Sider width={sidebarStore.width} theme="light" className={styles.sider}>
-        左侧工作台
+        <div className={styles.siderContent}>
+          <SideMenu />
+          <SideContent />
+        </div>
       </Sider>
       <div
         className={classNames(
