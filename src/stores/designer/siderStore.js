@@ -1,8 +1,8 @@
 import { makeAutoObservable } from "mobx";
 
-class DesignerStore {
+class SiderStore {
   // 左侧栏宽度
-  siderWidth = 200;
+  width = 300;
   // 是否正在拖拽
   isDragging = false;
 
@@ -11,9 +11,9 @@ class DesignerStore {
   }
 
   // 设置左侧栏宽度
-  setSiderWidth(width) {
-    if (width >= 200 && width <= 600) {
-      this.siderWidth = width;
+  setWidth(width) {
+    if (width >= 300 && width <= 600) {
+      this.width = width;
     }
   }
 
@@ -24,4 +24,4 @@ class DesignerStore {
   }
 }
 
-export default DesignerStore;
+export default SiderStore;
