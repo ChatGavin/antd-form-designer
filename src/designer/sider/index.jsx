@@ -3,6 +3,8 @@ import { observer } from "mobx-react-lite";
 import rootStore from "@/stores";
 import { useEffect } from "react";
 import React from "react";
+import styles from "./sider.module.css";
+import classNames from "classnames";
 
 const { Sider } = Layout;
 
@@ -54,42 +56,34 @@ const DesignerSider = observer(() => {
 
   return (
     <>
-      <Sider
-        width={siderStore.width}
-        theme="light"
-        style={{
-          borderRight: "1px solid #f0f0f0",
-          transition: "none",
-          userSelect: "none",
-        }}
-      >
+      <Sider width={siderStore.width} theme="light" className={styles.sider}>
         左侧工作台
       </Sider>
       <div
+        className={classNames(
+          styles.resizeHandle,
+          siderStore.isDragging
+            ? styles.resizeHandleDragging
+            : styles.resizeHandleIdle
+        )}
         style={{
-          position: "absolute",
-          top: 0,
-          bottom: 0,
           left: siderStore.width - 2,
-          width: "4px",
-          cursor: "col-resize",
-          background: siderStore.isDragging ? "#e6e6e6" : "transparent",
-          transition: "background 0.3s",
-          zIndex: 100,
-          userSelect: "none",
-          "&:hover": {
-            background: "#e6e6e6",
-          },
         }}
         onMouseDown={handleMouseDown}
         onMouseEnter={(e) => {
           if (!siderStore.isDragging) {
-            e.currentTarget.style.background = "#e6e6e6";
+            e.target.className = classNames(
+              styles.resizeHandle,
+              styles.resizeHandleDragging
+            );
           }
         }}
         onMouseLeave={(e) => {
           if (!siderStore.isDragging) {
-            e.currentTarget.style.background = "transparent";
+            e.target.className = classNames(
+              styles.resizeHandle,
+              styles.resizeHandleIdle
+            );
           }
         }}
       />

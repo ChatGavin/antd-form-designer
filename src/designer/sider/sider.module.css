@@ -1,0 +1,28 @@
+.sider {
+  border-right: 1px solid #f0f0f0;
+  transition: none;
+  user-select: none;
+}
+
+.resizeHandle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  cursor: col-resize;
+  transition: background 0.3s;
+  z-index: 100;
+  user-select: none;
+}
+
+.resizeHandle:hover {
+  background: #e6e6e6;
+}
+
+.resizeHandleDragging {
+  background: #e6e6e6;
+}
+
+.resizeHandleIdle {
+  background: transparent;
+} 
