@@ -1,0 +1,51 @@
+.container {
+  height: 100%;
+  overflow: hidden; /* 改为 hidden，防止任何方向的滚动 */
+  width: 50px;
+  border-right: 1px dashed #e8e8e8; /* 改回实线，保持 1px */
+  background-color: #fff; /* 改为白色背景 */
+  flex-shrink: 0; /* 防止 flex 布局下被压缩 */
+  position: relative; /* 添加定位上下文 */
+}
+
+.menuItem {
+  height: 45px; /* 调整菜单项高度，减小间距 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+/* 图标容器 */
+.iconWrapper {
+  width: 32px; /* 增加容器尺寸 */
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 4px;
+  margin: 6px; /* 适当减小外边距以适应更大的容器 */
+  transition: all 0.3s;
+  font-size: 18px;
+  color: #333333;
+}
+
+/* 确保图标本身大小固定 */
+.iconWrapper > span {
+  width: 20px !important;
+  height: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 20px !important;
+}
+
+.menuItem:hover .iconWrapper {
+  background-color: rgba(0, 0, 0, 0.1); /* 使用更深的灰色 */
+}
+
+.menuItemActive .iconWrapper {
+  background-color: rgba(0, 0, 0, 0.1);
+}
