@@ -1,13 +1,13 @@
 import { makeAutoObservable } from "mobx";
-import SiderStore from "./siderStore";
+import SidebarStore from "./sidebarStore";
 
 class DesignerStore {
-  siderStore;
+  sidebarStore;
 
   constructor() {
-    this.siderStore = new SiderStore();
+    this.sidebarStore = new SidebarStore();
     makeAutoObservable(this, {
-      siderStore: false, // 标记为非观察对象，因为它本身就是一个 observable
+      sidebarStore: false, // 标记为非观察对象，因为它本身就是一个 observable
     });
   }
 }

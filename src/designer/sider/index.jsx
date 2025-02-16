@@ -10,7 +10,7 @@ const { Sider } = Layout;
 
 const DesignerSider = observer(() => {
   const { designerStore } = rootStore;
-  const { siderStore } = designerStore;
+  const { sidebarStore } = designerStore;
 
   // 记录拖拽起始位置
   const startRef = React.useRef({ x: 0, width: 0 });
@@ -19,13 +19,13 @@ const DesignerSider = observer(() => {
     e.preventDefault();
     startRef.current = {
       x: e.clientX,
-      width: siderStore.width,
+      width: sidebarStore.width,
     };
-    siderStore.setIsDragging(true);
+    sidebarStore.setIsDragging(true);
   };
 
   const handleMouseMove = (e) => {
-    if (!siderStore.isDragging) return;
+    if (!sidebarStore.isDragging) return;
 
     // 计算位移差值
     const diff = e.clientX - startRef.current.x;
@@ -34,16 +34,16 @@ const DesignerSider = observer(() => {
 
     // 使用 requestAnimationFrame 优化性能
     requestAnimationFrame(() => {
-      siderStore.setWidth(newWidth);
+      sidebarStore.setWidth(newWidth);
     });
   };
 
   const handleMouseUp = () => {
-    siderStore.setIsDragging(false);
+    sidebarStore.setIsDragging(false);
   };
 
   useEffect(() => {
-    if (siderStore.isDragging) {
+    if (sidebarStore.isDragging) {
       window.addEventListener("mousemove", handleMouseMove);
       window.addEventListener("mouseup", handleMouseUp);
     }
@@ -52,26 +52,26 @@ const DesignerSider = observer(() => {
       window.removeEventListener("mousemove", handleMouseMove);
       window.removeEventListener("mouseup", handleMouseUp);
     };
-  }, [siderStore.isDragging]);
+  }, [sidebarStore.isDragging]);
 
   return (
     <>
-      <Sider width={siderStore.width} theme="light" className={styles.sider}>
+      <Sider width={sidebarStore.width} theme="light" className={styles.sider}>
         左侧工作台
       </Sider>
       <div
         className={classNames(
           styles.resizeHandle,
-          siderStore.isDragging
+          sidebarStore.isDragging
             ? styles.resizeHandleDragging
             : styles.resizeHandleIdle
         )}
         style={{
-          left: siderStore.width - 2,
+          left: sidebarStore.width - 2,
         }}
         onMouseDown={handleMouseDown}
         onMouseEnter={(e) => {
-          if (!siderStore.isDragging) {
+          if (!sidebarStore.isDragging) {
             e.target.className = classNames(
               styles.resizeHandle,
               styles.resizeHandleDragging
@@ -79,7 +79,7 @@ const DesignerSider = observer(() => {
           }
         }}
         onMouseLeave={(e) => {
-          if (!siderStore.isDragging) {
+          if (!sidebarStore.isDragging) {
             e.target.className = classNames(
               styles.resizeHandle,
               styles.resizeHandleIdle
