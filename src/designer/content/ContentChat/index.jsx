@@ -8,9 +8,11 @@ import {
 } from "@ant-design/icons";
 import styles from "./contentChat.module.css";
 import ContentChatHelp from "./ContentChatHelp";
+import ContentChatAI from "../ContentChatAI";
 
 const ContentChat = () => {
   const [helpModalOpen, setHelpModalOpen] = useState(false);
+  const [chatOpen, setChatOpen] = useState(false);
 
   const chatItems = [
     {
@@ -23,6 +25,7 @@ const ContentChat = () => {
       id: "chat",
       icon: <MessageOutlined />,
       tooltip: "AI 助手",
+      onClick: () => setChatOpen(true),
     },
   ];
 
@@ -52,6 +55,8 @@ const ContentChat = () => {
         open={helpModalOpen}
         onCancel={() => setHelpModalOpen(false)}
       />
+
+      <ContentChatAI open={chatOpen} onCancel={() => setChatOpen(false)} />
     </>
   );
 };
