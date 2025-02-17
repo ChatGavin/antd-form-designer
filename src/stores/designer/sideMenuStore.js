@@ -5,6 +5,8 @@ import {
   FormOutlined,
   TableOutlined,
   BarChartOutlined,
+  GithubOutlined,
+  BookOutlined,
 } from "@ant-design/icons";
 
 class SideMenuStore {
@@ -39,6 +41,22 @@ class SideMenuStore {
       title: "图表组件",
       icon: BarChartOutlined,
       description: "数据可视化组件",
+    },
+  ];
+
+  // 底部链接
+  bottomLinks = [
+    {
+      id: "docs",
+      title: "产品文档",
+      icon: BookOutlined,
+      url: "https://j37q60tldv.feishu.cn/docx/V9d9d9GqBo52cAxlvHccrcjanFb?from=from_copylink", // 文档地址
+    },
+    {
+      id: "github",
+      title: "GitHub",
+      icon: GithubOutlined,
+      url: "https://github.com/ChatGavin/antd-form-designer", // GitHub 地址
     },
   ];
 

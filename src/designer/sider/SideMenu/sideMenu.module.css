@@ -6,6 +6,8 @@
   background-color: #fff; /* 改为白色背景 */
   flex-shrink: 0; /* 防止 flex 布局下被压缩 */
   position: relative; /* 添加定位上下文 */
+  display: flex;
+  flex-direction: column; /* 添加这行 */
 }
 
 .menuItem {
@@ -48,4 +50,12 @@
 
 .menuItemActive .iconWrapper {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menuList {
+  flex: 1;
+}
+
+.bottomLinks {
+  padding-bottom: 8px;
 }
