@@ -13,5 +13,8 @@ export const chat = (message) => {
         content: message,
       },
     ],
+    options: {
+      language: "zh-CN",
+    },
   });
 };

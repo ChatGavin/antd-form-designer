@@ -11,6 +11,10 @@ const request = axios.create({
 // 请求拦截器
 request.interceptors.request.use(
   (config) => {
+    // 只有在有实际请求时才打印日志
+    if (config.method === "post" && config.data) {
+      console.log("Sending request:", config);
+    }
     return config;
   },
   (error) => {
@@ -21,6 +25,10 @@ request.interceptors.request.use(
 // 响应拦截器
 request.interceptors.response.use(
   (response) => {
+    // 只有在有实际响应时才打印日志
+    if (response.config.method === "post" && response.data) {
+      console.log("Response:", response.data);
+    }
     return response.data;
   },
   (error) => {
