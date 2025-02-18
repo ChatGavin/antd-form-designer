@@ -2,7 +2,7 @@
 
 ## 项目介绍
 
-Antd Form Designer 是一个基于 Ant Design 的表单设计器, 旨在帮助开发者轻松地设计表单, 探索 AI 在表单设计中的应用.
+Antd Form Designer 是一个基于 Ant Design 的表单设计器, 旨在探索 AI 在表单设计中的应用, 帮助开发者轻松地构建表单.
 
 预览地址: [https://designer.gavin.chat](https://designer.gavin.chat)
 
