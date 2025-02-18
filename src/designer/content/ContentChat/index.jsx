@@ -12,13 +12,13 @@ import ContentChatAI from "../ContentChatAI";
 
 const ContentChat = () => {
   const [helpModalOpen, setHelpModalOpen] = useState(false);
-  const [chatOpen, setChatOpen] = useState(false);
+  const [chatOpen, setChatOpen] = useState(true);
 
   const chatItems = [
     {
       id: "help",
       icon: <QuestionCircleOutlined />,
-      tooltip: "AI 助手说明",
+      tooltip: "模型配置",
       onClick: () => setHelpModalOpen(true),
     },
     {
