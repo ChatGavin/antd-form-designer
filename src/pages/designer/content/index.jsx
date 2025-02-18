@@ -1,8 +1,8 @@
 import { Layout } from "antd";
 import styles from "./content.module.css";
-import ContentMenu from "./ContentMenu";
-import ContentPanel from "./ContentPanel";
-import ContentChat from "./ContentChat";
+import ContentMenu from "./ContentMenu/index.jsx";
+import ContentPanel from "./ContentPanel/index.jsx";
+import ContentChat from "./ContentChat/index.jsx";
 
 const { Content } = Layout;
 

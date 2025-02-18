@@ -1,12 +1,12 @@
 import { Layout } from "antd";
 import { observer } from "mobx-react-lite";
-import rootStore from "@/stores";
+import rootStore from "@/stores/index.js";
 import { useEffect } from "react";
 import React from "react";
 import styles from "./sider.module.css";
 import classNames from "classnames";
-import SideMenu from "./SideMenu";
-import SideContent from "./SideContent";
+import SideMenu from "./SideMenu/index.jsx";
+import SideContent from "./SideContent/index.jsx";
 
 const { Sider } = Layout;
 

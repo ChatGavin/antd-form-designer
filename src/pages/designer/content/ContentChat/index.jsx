@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { FloatButton } from "antd";
 import { Bot, BotMessageSquare, X, Settings } from "lucide-react";
 import styles from "./contentChat.module.css";
-import ContentChatHelp from "./ContentChatHelp";
-import ContentChatAI from "../ContentChatAI";
+import ContentChatHelp from "./ContentChatHelp.jsx";
+import ContentChatAI from "../ContentChatAI/index.jsx";
 
 const ContentChat = () => {
   const [helpModalOpen, setHelpModalOpen] = useState(false);

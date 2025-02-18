@@ -1,4 +1,4 @@
-import FormDesigner from "@/designer";
+import FormDesigner from "@/pages/designer";
 import "normalize.css";
 import "antd/dist/reset.css";
 

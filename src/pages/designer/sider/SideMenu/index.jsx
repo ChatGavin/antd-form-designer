@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./sideMenu.module.css";
 import { observer } from "mobx-react-lite";
-import rootStore from "@/stores";
+import rootStore from "@/stores/index.js";
 import classNames from "classnames";
 import { Tooltip } from "antd";
 

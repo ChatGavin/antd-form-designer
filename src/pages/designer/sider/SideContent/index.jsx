@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./sideContent.module.css";
 import { observer } from "mobx-react-lite";
-import rootStore from "@/stores";
+import rootStore from "@/stores/index.js";
 
 const SideContent = observer(() => {
   const { designerStore } = rootStore;
