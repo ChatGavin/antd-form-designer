@@ -1,11 +1,6 @@
 import React, { useState } from "react";
 import { FloatButton } from "antd";
-import {
-  OpenAIOutlined,
-  MessageOutlined,
-  CloseOutlined,
-  QuestionCircleOutlined,
-} from "@ant-design/icons";
+import { Bot, BotMessageSquare, X, Settings } from "lucide-react";
 import styles from "./contentChat.module.css";
 import ContentChatHelp from "./ContentChatHelp";
 import ContentChatAI from "../ContentChatAI";
@@ -17,13 +12,13 @@ const ContentChat = () => {
   const chatItems = [
     {
       id: "help",
-      icon: <QuestionCircleOutlined />,
+      icon: <Settings size={20} />,
       tooltip: "模型配置",
       onClick: () => setHelpModalOpen(true),
     },
     {
       id: "chat",
-      icon: <MessageOutlined />,
+      icon: <BotMessageSquare size={20} />,
       tooltip: "AI 助手",
       onClick: () => setChatOpen(true),
     },
@@ -38,8 +33,8 @@ const ContentChat = () => {
           right: 340,
           bottom: 40,
         }}
-        icon={<OpenAIOutlined />}
-        closeIcon={<CloseOutlined />}
+        icon={<Bot size={20} />}
+        closeIcon={<X size={20} />}
       >
         {chatItems.map((item) => (
           <FloatButton

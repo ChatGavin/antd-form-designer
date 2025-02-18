@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Sender } from "@ant-design/x";
 import { App } from "antd";
-import { CloseOutlined } from "@ant-design/icons";
+import { X } from "lucide-react";
 import styles from "./contentChatAI.module.css";
 
 const ContentChatAI = ({ open, onCancel }) => {
@@ -27,7 +27,7 @@ const ContentChatAI = ({ open, onCancel }) => {
   return (
     <div className={styles.container}>
       <div className={styles.closeButton} onClick={onCancel}>
-        <CloseOutlined />
+        <X size={12} />
       </div>
       <Sender
         loading={loading}

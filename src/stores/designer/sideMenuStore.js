@@ -1,13 +1,13 @@
 import { makeAutoObservable } from "mobx";
 import {
-  AppstoreOutlined,
-  PictureOutlined,
-  FormOutlined,
-  TableOutlined,
-  BarChartOutlined,
-  GithubOutlined,
-  BookOutlined,
-} from "@ant-design/icons";
+  LayoutGrid,
+  Image,
+  FormInput,
+  Table,
+  BarChart,
+  Book,
+  Github,
+} from "lucide-react";
 
 class SideMenuStore {
   // 菜单列表
@@ -15,31 +15,31 @@ class SideMenuStore {
     {
       id: 1,
       title: "组件库",
-      icon: AppstoreOutlined,
+      icon: LayoutGrid,
       description: "常用组件集合",
     },
     {
       id: 2,
       title: "图片素材",
-      icon: PictureOutlined,
+      icon: Image,
       description: "图片资源管理",
     },
     {
       id: 3,
       title: "表单控件",
-      icon: FormOutlined,
+      icon: FormInput,
       description: "表单相关组件",
     },
     {
       id: 4,
       title: "数据表格",
-      icon: TableOutlined,
+      icon: Table,
       description: "表格相关组件",
     },
     {
       id: 5,
       title: "图表组件",
-      icon: BarChartOutlined,
+      icon: BarChart,
       description: "数据可视化组件",
     },
   ];
@@ -49,13 +49,13 @@ class SideMenuStore {
     {
       id: "docs",
       title: "产品文档",
-      icon: BookOutlined,
+      icon: Book,
       url: "https://j37q60tldv.feishu.cn/docx/V9d9d9GqBo52cAxlvHccrcjanFb?from=from_copylink", // 文档地址
     },
     {
       id: "github",
       title: "GitHub",
-      icon: GithubOutlined,
+      icon: Github,
       url: "https://github.com/ChatGavin/antd-form-designer", // GitHub 地址
     },
   ];
