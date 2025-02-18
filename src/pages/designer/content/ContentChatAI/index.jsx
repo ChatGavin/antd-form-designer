@@ -3,6 +3,7 @@ import { Sender } from "@ant-design/x";
 import { App } from "antd";
 import { X } from "lucide-react";
 import styles from "./contentChatAI.module.css";
+import { chat } from "@/api/ollama"; // 导入聊天接口
 
 const ContentChatAI = ({ open, onCancel }) => {
   const [value, setValue] = useState("");
@@ -11,11 +12,18 @@ const ContentChatAI = ({ open, onCancel }) => {
 
   if (!open) return null;
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     if (!value.trim()) return;
     setLoading(true);
-    setValue("");
-    message.info("发送消息");
+    try {
+      const response = await chat(value);
+      message.success("发送成功");
+    } catch (error) {
+      message.error("发送失败");
+    } finally {
+      setLoading(false);
+      setValue("");
+    }
   };
 
   const handleCancel = () => {
