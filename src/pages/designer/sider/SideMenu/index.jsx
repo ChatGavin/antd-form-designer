@@ -27,7 +27,6 @@ const SideMenu = observer(() => {
               placement="right"
               mouseEnterDelay={0.5}
               destroyTooltipOnHide
-              overlayStyle={{ position: "fixed" }}
             >
               <div
                 onClick={() => sideMenuStore.setActiveId(item.id)}
@@ -53,7 +52,6 @@ const SideMenu = observer(() => {
               placement="right"
               mouseEnterDelay={0.5}
               destroyTooltipOnHide
-              overlayStyle={{ position: "fixed" }}
             >
               <div
                 onClick={() => handleLinkClick(link.url)}
