@@ -1,3 +1,5 @@
+// https://github.com/ollama/ollama/blob/main/docs/api.md
+
 import { post } from "../axios";
 
 // 基础路径
