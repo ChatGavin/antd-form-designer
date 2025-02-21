@@ -2,7 +2,7 @@ import { Layout } from "antd";
 import styles from "./index.module.css";
 import ContentMenu from "./ContentMenu";
 import ContentPanel from "./ContentPanel";
-import ContentChat from "./ContentChat/index.jsx";
+import ContentChat from "@/pages/designer/ChatAI/ContentChat/index.jsx";
 
 const { Content } = Layout;
 

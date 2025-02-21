@@ -3,7 +3,7 @@ import { Sender } from "@ant-design/x";
 import { App } from "antd";
 import { X } from "lucide-react";
 import styles from "./contentChatAI.module.css";
-import { chat } from "@/api/ollama"; // 导入聊天接口
+import { chat } from "@/api/ollama/index.js"; // 导入聊天接口
 
 const ContentChatAI = ({ open, onCancel }) => {
   const [value, setValue] = useState("");

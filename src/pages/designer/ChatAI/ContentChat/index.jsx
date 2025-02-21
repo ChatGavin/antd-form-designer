@@ -3,7 +3,7 @@ import { FloatButton } from "antd";
 import { Bot, BotMessageSquare, X, Settings } from "lucide-react";
 import styles from "./contentChat.module.css";
 import ContentChatHelp from "./ContentChatHelp.jsx";
-import ContentChatAI from "../ContentChatAI/index.jsx";
+import ContentChatAI from "@/pages/designer/ChatAI/ContentChatAI/index.jsx";
 
 const ContentChat = () => {
   const [helpModalOpen, setHelpModalOpen] = useState(false);
