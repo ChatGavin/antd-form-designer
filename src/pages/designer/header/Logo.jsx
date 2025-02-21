@@ -1,4 +1,4 @@
-import styles from "./header.module.css";
+import styles from "./index.module.css";
 import logo from "@/assets/icons/logo.png";
 
 const Logo = () => {

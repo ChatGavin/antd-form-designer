@@ -1,5 +1,5 @@
 import { Layout } from "antd";
-import styles from "./header.module.css";
+import styles from "./index.module.css";
 import Logo from "./Logo";
 
 const { Header } = Layout;

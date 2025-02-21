@@ -3,7 +3,7 @@ import { observer } from "mobx-react-lite";
 import rootStore from "@/stores/index.js";
 import { useEffect } from "react";
 import React from "react";
-import styles from "./sider.module.css";
+import styles from "./index.module.css";
 import classNames from "classnames";
 import SideMenu from "./SideMenu/index.jsx";
 import SideContent from "./SideContent/index.jsx";
