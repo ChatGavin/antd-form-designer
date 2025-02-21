@@ -1,11 +1,10 @@
-import React from "react";
-import styles from "./sideMenu.module.css";
+import styles from "./index.module.css";
 import { observer } from "mobx-react-lite";
 import rootStore from "@/stores/index.js";
 import classNames from "classnames";
 import { Tooltip } from "antd";
 
-const SideMenu = observer(() => {
+const App = observer(() => {
   const { designerStore } = rootStore;
   const { sideMenuStore } = designerStore;
 
@@ -69,4 +68,4 @@ const SideMenu = observer(() => {
   );
 });
 
-export default SideMenu;
+export default App;

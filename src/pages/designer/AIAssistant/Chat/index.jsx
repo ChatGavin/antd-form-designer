@@ -1,14 +1,14 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Sender } from "@ant-design/x";
-import { App } from "antd";
+import { App as AntdApp } from "antd";
 import { X } from "lucide-react";
-import styles from "./contentChatAI.module.css";
+import styles from "./index.module.css";
 import { chat } from "@/api/ollama/index.js"; // 导入聊天接口
 
-const ContentChatAI = ({ open, onCancel }) => {
+const App = ({ open, onCancel }) => {
   const [value, setValue] = useState("");
   const [loading, setLoading] = useState(false);
-  const { message } = App.useApp();
+  const { message } = AntdApp.useApp();
 
   if (!open) return null;
 
@@ -49,4 +49,4 @@ const ContentChatAI = ({ open, onCancel }) => {
   );
 };
 
-export default ContentChatAI;
+export default App;

@@ -1,21 +1,27 @@
 import { Layout } from "antd";
-import DesignerHeader from "./header/index.jsx";
-import DesignerSider from "./sider/index.jsx";
-import DesignerContent from "./content/index.jsx";
+import {
+  Header,
+  LeftPanel,
+  MiddleContent,
+  RightPanel,
+  AIAssistant,
+} from "./index.js";
 // 使用 mobx 观察者
 import { observer } from "mobx-react-lite";
 import styles from "./index.module.css";
 
-const FormDesigner = observer(() => {
+const App = observer(() => {
   return (
     <Layout className={styles.layout}>
-      <DesignerHeader />
+      <Header />
       <Layout>
-        <DesignerSider />
-        <DesignerContent />
+        <LeftPanel />
+        <MiddleContent />
+        <RightPanel />
       </Layout>
+      <AIAssistant />
     </Layout>
   );
 });
 
-export default FormDesigner;
+export default App;

@@ -1,0 +1,19 @@
+.content {
+  padding: 0 16px;
+}
+
+.content h3 {
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: #262626;
+}
+
+.content p,
+.content li {
+  color: #595959;
+  line-height: 1.6;
+}
+
+.content ul {
+  padding-left: 20px;
+}

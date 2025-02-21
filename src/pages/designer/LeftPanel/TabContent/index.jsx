@@ -1,9 +1,8 @@
-import React from "react";
-import styles from "./sideContent.module.css";
+import styles from "./index.module.css";
 import { observer } from "mobx-react-lite";
 import rootStore from "@/stores/index.js";
 
-const SideContent = observer(() => {
+const App = observer(() => {
   const { designerStore } = rootStore;
   const { sideMenuStore } = designerStore;
 
@@ -18,4 +17,4 @@ const SideContent = observer(() => {
   );
 });
 
-export default SideContent;
+export default App;

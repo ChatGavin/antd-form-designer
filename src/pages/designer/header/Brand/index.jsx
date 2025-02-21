@@ -1,7 +1,7 @@
 import styles from "./index.module.css";
 import logo from "@/assets/icons/logo.png";
 
-const Logo = () => {
+const App = () => {
   return (
     <div className={styles.logo}>
       <img src={logo} alt="logo" />
@@ -10,4 +10,4 @@ const Logo = () => {
   );
 };
 
-export default Logo;
+export default App;

@@ -1,7 +1,6 @@
-import React from "react";
-import styles from "./contentMenu.module.css";
+import styles from "./index.module.css";
 
-const ContentMenu = () => {
+const App = () => {
   return (
     <div className={styles.container}>
       <div className={styles.menuItem}>
@@ -17,4 +16,4 @@ const ContentMenu = () => {
   );
 };
 
-export default ContentMenu;
+export default App;

@@ -1,14 +1,13 @@
 import { Layout } from "antd";
 import styles from "./index.module.css";
-import { Brand } from "./index.js";
 
-const { Header } = Layout;
+const { Sider } = Layout;
 
 const App = () => {
   return (
-    <Header className={styles.header}>
-      <Brand />
-    </Header>
+    <Sider className={styles.sider} width={300} theme="light">
+      右侧面板
+    </Sider>
   );
 };
 
