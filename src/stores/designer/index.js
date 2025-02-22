@@ -1,17 +1,16 @@
 import { makeAutoObservable } from "mobx";
-import SidebarStore from "./sidebarStore";
-import SideMenuStore from "./sideMenuStore";
+import { PanelResizeStore, TabNavStore } from "./leftPanel";
 
 class DesignerStore {
-  sidebarStore;
-  sideMenuStore;
+  panelResizeStore;
+  tabNavStore;
 
   constructor() {
-    this.sidebarStore = new SidebarStore();
-    this.sideMenuStore = new SideMenuStore();
+    this.panelResizeStore = new PanelResizeStore();
+    this.tabNavStore = new TabNavStore();
     makeAutoObservable(this, {
-      sidebarStore: false, // 标记为非观察对象，因为它本身就是一个 observable
-      sideMenuStore: false, // 标记为非观察对象，因为它本身就是一个 observable
+      panelResizeStore: false, // 标记为非观察对象，因为它本身就是一个 observable
+      tabNavStore: false, // 标记为非观察对象，因为它本身就是一个 observable
     });
   }
 }

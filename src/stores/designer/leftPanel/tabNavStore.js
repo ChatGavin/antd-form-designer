@@ -9,8 +9,7 @@ import {
   Github,
 } from "lucide-react";
 
-class SideMenuStore {
-  // 菜单列表
+class TabNavStore {
   menuItems = [
     {
       id: 1,
@@ -72,4 +71,4 @@ class SideMenuStore {
   }
 }
 
-export default SideMenuStore;
+export default TabNavStore;

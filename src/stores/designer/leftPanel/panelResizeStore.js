@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
 
-class SidebarStore {
+class PanelResizeStore {
   // 左侧栏宽度
   width = 200;
   // 是否正在拖拽
@@ -35,4 +35,4 @@ class SidebarStore {
   }
 }
 
-export default SidebarStore;
+export default PanelResizeStore;
