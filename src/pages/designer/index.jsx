@@ -6,11 +6,9 @@ import {
   RightPanel,
   AIAssistant,
 } from "./index.js";
-// 使用 mobx 观察者
-import { observer } from "mobx-react-lite";
 import styles from "./index.module.css";
 
-const App = observer(() => {
+const App = () => {
   return (
     <Layout className={styles.layout}>
       <Header />
@@ -22,6 +20,6 @@ const App = observer(() => {
       <AIAssistant />
     </Layout>
   );
-});
+};
 
 export default App;
