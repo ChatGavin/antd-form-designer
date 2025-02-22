@@ -1,7 +1,7 @@
-import "normalize.css";
-import "antd/dist/reset.css";
+// 全局样式
+import "@/styles/index.js";
 // 设计器
-import Designer from "@/pages/designer";
+import Designer from "@/pages/designer/index.jsx";
 
 function App() {
   return <Designer />;

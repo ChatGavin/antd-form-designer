@@ -1,12 +1,6 @@
-import { Layout } from "antd";
-import {
-  Header,
-  LeftPanel,
-  MiddleContent,
-  RightPanel,
-  AIAssistant,
-} from "./index.js";
 import styles from "./index.module.css";
+import { Layout } from "antd";
+import { Header, LeftPanel, MiddleContent, RightPanel } from "./index.js";
 
 const App = () => {
   return (
@@ -17,7 +11,6 @@ const App = () => {
         <MiddleContent />
         <RightPanel />
       </Layout>
-      <AIAssistant />
     </Layout>
   );
 };

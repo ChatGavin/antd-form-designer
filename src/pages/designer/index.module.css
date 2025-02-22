@@ -1,4 +1,7 @@
 .layout {
-  position: relative;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  background-color: var(--background-color);
 }
