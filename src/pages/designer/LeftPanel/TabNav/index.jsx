@@ -6,7 +6,7 @@ import { Tooltip } from "antd";
 
 const App = observer(() => {
   const { designerStore } = rootStore;
-  const { sideMenuStore } = designerStore;
+  const { tabNavStore } = designerStore;
 
   const handleLinkClick = (url) => {
     if (url) {
@@ -17,7 +17,7 @@ const App = observer(() => {
   return (
     <div className={styles.container}>
       <div className={styles.menuList}>
-        {sideMenuStore.menuItems.map((item) => {
+        {tabNavStore.menuItems.map((item) => {
           const Icon = item.icon;
           return (
             <Tooltip
@@ -28,9 +28,9 @@ const App = observer(() => {
               destroyTooltipOnHide
             >
               <div
-                onClick={() => sideMenuStore.setActiveId(item.id)}
+                onClick={() => tabNavStore.setActiveId(item.id)}
                 className={classNames(styles.menuItem, {
-                  [styles.menuItemActive]: sideMenuStore.activeId === item.id,
+                  [styles.menuItemActive]: tabNavStore.activeId === item.id,
                 })}
               >
                 <div className={styles.iconWrapper}>
@@ -42,7 +42,7 @@ const App = observer(() => {
         })}
       </div>
       <div className={styles.bottomLinks}>
-        {sideMenuStore.bottomLinks.map((link) => {
+        {tabNavStore.bottomLinks.map((link) => {
           const Icon = link.icon;
           return (
             <Tooltip
