@@ -6,6 +6,11 @@ import path from "path";
 export default defineConfig({
   plugins: [react()],
   base: "/", // 如果是部署到 github pages，需要设置为 /<repo-name>/
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
   server: {
     port: 8000,
     open: true,
@@ -22,11 +27,6 @@ export default defineConfig({
       //   changeOrigin: true,
       //   rewrite: (path) => path.replace(/^\/api\/other-service/, ""),
       // },
-    },
-  },
-  resolve: {
-    alias: {
-      "@": path.resolve(__dirname, "./src"),
     },
   },
 });
