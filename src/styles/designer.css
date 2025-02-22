@@ -1,0 +1,9 @@
+/* 设计器全局样式 */
+:root {
+  /* 颜色系统 */
+  --background-color: #f5f5f5;
+
+  /* 边框样式 */
+  --border-color: #d9d9d9;
+  --border-style: 1px solid var(--border-color);
+}
