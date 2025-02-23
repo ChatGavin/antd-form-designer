@@ -1,10 +1,10 @@
 import styles from "./index.module.css";
-import { TabNav, TabContent } from "./index.js";
+import { Tabs, TabContent } from "./index.js";
 
 const App = () => {
   return (
     <div className={styles.layout}>
-      <TabNav />
+      <Tabs />
       <TabContent />
     </div>
   );
