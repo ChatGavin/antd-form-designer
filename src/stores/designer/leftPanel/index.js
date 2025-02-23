@@ -1,3 +1,3 @@
-import TabNavStore from "./tabNavStore";
+import TabsStore from "./tabsStore";
 
-export { TabNavStore };
+export { TabsStore };

@@ -1,13 +1,13 @@
 import { makeAutoObservable } from "mobx";
-import { TabNavStore } from "./leftPanel";
+import { TabsStore } from "./leftPanel";
 
 class DesignerStore {
   tabNavStore;
 
   constructor() {
-    this.tabNavStore = new TabNavStore();
+    this.tabsStore = new TabsStore();
     makeAutoObservable(this, {
-      tabNavStore: false, // 标记为非观察对象，因为它本身就是一个 observable
+      tabsStore: false, // 标记为非观察对象，因为它本身就是一个 observable
     });
   }
 }

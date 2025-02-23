@@ -9,7 +9,7 @@ import {
   Github,
 } from "lucide-react";
 
-class TabNavStore {
+class TabsStore {
   menuItems = [
     {
       id: 1,
@@ -71,4 +71,4 @@ class TabNavStore {
   }
 }
 
-export default TabNavStore;
+export default TabsStore;
