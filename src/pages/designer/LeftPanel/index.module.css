@@ -1,36 +1,8 @@
-.sider {
-  border-right: 1px solid #d9d9d9;
-  transition: none;
-  user-select: none;
-  position: relative;
-  background: #fff;
-}
-
-.siderContent {
-  display: flex;
+.layout {
+  width: 300px;
   height: 100%;
-  width: 100%;
-}
-
-.resizeHandle {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  cursor: col-resize;
-  transition: background 0.3s;
-  z-index: 100;
-  user-select: none;
-}
-
-.resizeHandle:hover {
-  background: #e6e6e6;
-}
-
-.resizeHandleDragging {
-  background: #e6e6e6;
-}
-
-.resizeHandleIdle {
+  box-sizing: border-box;
+  border-right: 1px solid var(--border-color);
   background: transparent;
+  display: flex;
 }
