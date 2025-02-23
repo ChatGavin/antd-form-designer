@@ -1,5 +1,6 @@
 import { makeAutoObservable } from "mobx";
 import { LayoutGrid, FileJson, Route, Github } from "lucide-react";
+import rootStore from "@/stores/index";
 
 class TabsStore {
   topTabs = [
@@ -17,7 +18,7 @@ class TabsStore {
 
   bottomTabs = [
     {
-      id: "docs",
+      id: "changelog",
       title: "版本更新",
       icon: Route,
     },
@@ -36,8 +37,18 @@ class TabsStore {
     makeAutoObservable(this);
   }
 
-  setActiveId(id) {
+  // 切换主工具栏状态
+  switchMainTool(id) {
     this.activeId = id;
+  }
+
+  // 处理快捷工具栏点击
+  handleQuickTool(tab) {
+    if (tab.id === "github") {
+      window.open(tab.url, "_blank");
+    } else if (tab.id === "changelog") {
+      rootStore.designerStore.dialogStore.show("changelog");
+    }
   }
 }
 
