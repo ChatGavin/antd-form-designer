@@ -1,7 +1,7 @@
 /* 设计器全局样式 */
 :root {
   /* 颜色系统 */
-
+  --background-hover: #e8e8e8;
   /* 边框样式 */
   --border-color: #d9d9d9;
 }
