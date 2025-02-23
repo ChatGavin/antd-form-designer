@@ -1,6 +1,6 @@
 .header {
   padding: 0 10px;
-  background: #ffffff;
+  background: #fff;
   border-bottom: 1px solid var(--border-color);
   position: relative;
   display: flex;
