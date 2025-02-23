@@ -1,14 +1,17 @@
 import { Layout } from "antd";
 import styles from "./index.module.css";
+import { Toolbar } from "./index.js";
+import { Workspace } from "./index.js";
+import { Footer } from "./index.js";
 
 const { Content } = Layout;
 
 const App = () => {
   return (
     <Content className={styles.content}>
-      <div className={styles.mainContent}>
-        <div className={styles.workspace}>中间工作区域</div>
-      </div>
+      <Toolbar />
+      <Workspace />
+      <Footer />
     </Content>
   );
 };

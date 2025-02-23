@@ -1,20 +1,4 @@
 .content {
-  padding: 0;
-  min-height: 280px;
-  background: #fff;
-  position: relative;
   display: flex;
   flex-direction: column;
-}
-
-.mainContent {
-  flex: 1;
-  display: flex;
-  height: 100%;
-}
-
-.workspace {
-  flex: 1;
-  padding: 24px;
-  position: relative;
 }

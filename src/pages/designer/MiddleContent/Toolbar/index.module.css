@@ -1,21 +1,22 @@
 .container {
   height: 40px;
+  line-height: 40px;
+  box-sizing: border-box;
+  overflow: hidden;
   display: flex;
   align-items: center;
-  border-bottom: 1px dashed #e8e8e8;
+  border-bottom: 1px dashed var(--border-color);
   background: #fff;
+  gap: 10px;
+  padding: 0 10px;
 }
 
 .menuItem {
-  height: 40px;
-  padding: 0 16px;
   display: flex;
   align-items: center;
   cursor: pointer;
-  transition: all 0.3s;
-  color: #333333;
 }
 
 .menuItem:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: var(--background-hover);
 }
