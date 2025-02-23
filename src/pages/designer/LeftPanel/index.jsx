@@ -1,13 +1,17 @@
 import styles from "./index.module.css";
-import { Tabs, TabContent } from "./index.js";
+import Tabs from "./Tabs";
+import TabContent from "./TabContent";
+import Changelog from "./Changelog";
 
-const App = () => {
+const LeftPanel = () => {
   return (
     <div className={styles.layout}>
       <Tabs />
       <TabContent />
+      {/* 版本更新 */}
+      <Changelog />
     </div>
   );
 };
 
-export default App;
+export default LeftPanel;

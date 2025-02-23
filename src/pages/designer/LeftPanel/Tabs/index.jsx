@@ -8,12 +8,6 @@ const App = observer(() => {
   const { designerStore } = rootStore;
   const { tabsStore } = designerStore;
 
-  const handleLinkClick = (tab) => {
-    if (tab.url) {
-      window.open(tab.url, "_blank");
-    }
-  };
-
   return (
     <div className={styles.container}>
       {/* 顶部菜单 */}
@@ -23,7 +17,7 @@ const App = observer(() => {
           return (
             <Tooltip key={tab.id} title={tab.title} placement="right">
               <div
-                onClick={() => tabsStore.setActiveId(tab.id)}
+                onClick={() => tabsStore.switchMainTool(tab.id)}
                 className={classNames(styles.tab, {
                   [styles.activeTab]: tabsStore.activeId === tab.id,
                 })}
@@ -41,7 +35,10 @@ const App = observer(() => {
           const Icon = tab.icon;
           return (
             <Tooltip key={tab.id} title={tab.title} placement="right">
-              <div onClick={() => handleLinkClick(tab)} className={styles.tab}>
+              <div
+                onClick={() => tabsStore.handleQuickTool(tab)}
+                className={styles.tab}
+              >
                 <Icon size={24} />
               </div>
             </Tooltip>
