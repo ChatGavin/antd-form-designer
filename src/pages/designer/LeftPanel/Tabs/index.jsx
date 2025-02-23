@@ -8,57 +8,41 @@ const App = observer(() => {
   const { designerStore } = rootStore;
   const { tabsStore } = designerStore;
 
-  const handleLinkClick = (url) => {
-    if (url) {
-      window.open(url, "_blank");
+  const handleLinkClick = (tab) => {
+    if (tab.url) {
+      window.open(tab.url, "_blank");
     }
   };
 
   return (
     <div className={styles.container}>
-      <div className={styles.menuList}>
-        {tabsStore.menuItems.map((item) => {
-          const Icon = item.icon;
+      {/* 顶部菜单 */}
+      <div className={styles.topTabs}>
+        {tabsStore.topTabs.map((tab) => {
+          const Icon = tab.icon;
           return (
-            <Tooltip
-              key={item.id}
-              title={item.title}
-              placement="right"
-              mouseEnterDelay={0.5}
-              destroyTooltipOnHide
-            >
+            <Tooltip key={tab.id} title={tab.title} placement="right">
               <div
-                onClick={() => tabsStore.setActiveId(item.id)}
-                className={classNames(styles.menuItem, {
-                  [styles.menuItemActive]: tabsStore.activeId === item.id,
+                onClick={() => tabsStore.setActiveId(tab.id)}
+                className={classNames(styles.tab, {
+                  [styles.activeTab]: tabsStore.activeId === tab.id,
                 })}
               >
-                <div className={styles.iconWrapper}>
-                  <Icon />
-                </div>
+                <Icon size={24} />
               </div>
             </Tooltip>
           );
         })}
       </div>
-      <div className={styles.bottomLinks}>
-        {tabsStore.bottomLinks.map((link) => {
-          const Icon = link.icon;
+
+      {/* 底部菜单 */}
+      <div className={styles.bottomTabs}>
+        {tabsStore.bottomTabs.map((tab) => {
+          const Icon = tab.icon;
           return (
-            <Tooltip
-              key={link.id}
-              title={link.title}
-              placement="right"
-              mouseEnterDelay={0.5}
-              destroyTooltipOnHide
-            >
-              <div
-                onClick={() => handleLinkClick(link.url)}
-                className={styles.menuItem}
-              >
-                <div className={styles.iconWrapper}>
-                  <Icon />
-                </div>
+            <Tooltip key={tab.id} title={tab.title} placement="right">
+              <div onClick={() => handleLinkClick(tab)} className={styles.tab}>
+                <Icon size={24} />
               </div>
             </Tooltip>
           );

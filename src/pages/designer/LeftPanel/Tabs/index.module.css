@@ -1,61 +1,41 @@
 .container {
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   height: 100%;
-  overflow: hidden; /* 改为 hidden，防止任何方向的滚动 */
   width: 50px;
-  border-right: 1px dashed #e8e8e8; /* 中层使用中等深度的颜色 */
-  background-color: #fff; /* 改为白色背景 */
-  flex-shrink: 0; /* 防止 flex 布局下被压缩 */
-  position: relative; /* 添加定位上下文 */
-  display: flex;
-  flex-direction: column; /* 添加这行 */
+  box-sizing: border-box;
+  border-right: 1px dashed var(--border-color);
+  background: #fff;
 }
 
-.menuItem {
-  height: 45px; /* 调整菜单项高度，减小间距 */
+.topTabs,
+.bottomTabs {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s;
+  flex-direction: column;
+  gap: 8px;
 }
 
-/* 图标容器 */
-.iconWrapper {
-  width: 32px; /* 增加容器尺寸 */
-  height: 32px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 4px;
+.tab {
   padding: 4px;
-  margin: 6px; /* 适当减小外边距以适应更大的容器 */
-  transition: all 0.3s;
-  font-size: 18px;
-  color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  cursor: pointer;
+  color: var(--text-color-secondary);
 }
 
-/* 确保图标本身大小固定 */
-.iconWrapper > span {
-  width: 20px !important;
-  height: 20px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 20px !important;
+.tab:hover {
+  background: #e8e8e8;
 }
 
-.menuItem:hover .iconWrapper {
-  background-color: rgba(0, 0, 0, 0.1); /* 使用更深的灰色 */
+.activeTab {
+  background: #e8e8e8;
 }
 
-.menuItemActive .iconWrapper {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.menuList {
-  flex: 1;
-}
-
-.bottomLinks {
-  padding-bottom: 8px;
+.activeTab:hover {
+  background: #e8e8e8;
 }
