@@ -25,17 +25,16 @@
   justify-content: center;
   border-radius: 6px;
   cursor: pointer;
-  color: var(--text-color-secondary);
 }
 
 .tab:hover {
-  background: #e8e8e8;
+  background: var(--background-hover);
 }
 
 .activeTab {
-  background: #e8e8e8;
+  background: var(--background-hover);
 }
 
 .activeTab:hover {
-  background: #e8e8e8;
+  background: var(--background-hover);
 }
