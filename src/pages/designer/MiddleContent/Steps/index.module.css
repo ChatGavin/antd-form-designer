@@ -3,7 +3,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0;
+  box-sizing: border-box;
+  gap: 5px;
   border-bottom: 1px dashed var(--border-color);
   background: #fff;
 }
@@ -14,7 +15,6 @@
   justify-content: center;
   padding: 4px;
   cursor: pointer;
-  color: var(--text-color-secondary);
   border-radius: 6px;
 }
 
@@ -29,5 +29,5 @@
 .divider {
   width: 60px;
   height: 1px;
-  border-top: 1px dashed var(--border-color);
+  border-top: 1px dotted var(--border-color);
 }

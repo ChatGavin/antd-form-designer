@@ -1,11 +1,11 @@
 import { makeAutoObservable } from "mobx";
-import { FileText, Database, History } from "lucide-react";
+import { PencilRuler, Database, History } from "lucide-react";
 
 class StepsStore {
   steps = [
     {
       id: "form",
-      icon: FileText,
+      icon: PencilRuler,
       title: "表单设计",
     },
     {
