@@ -1,0 +1,33 @@
+.container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  border-bottom: 1px dashed var(--border-color);
+  background: #fff;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  cursor: pointer;
+  color: var(--text-color-secondary);
+  border-radius: 6px;
+}
+
+.step:hover {
+  background: var(--background-hover);
+}
+
+.activeStep {
+  background: var(--background-hover);
+}
+
+.divider {
+  width: 60px;
+  height: 1px;
+  border-top: 1px dashed var(--border-color);
+}
