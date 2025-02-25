@@ -11,9 +11,9 @@ const Steps = observer(() => {
   return (
     <div className={styles.container}>
       {stepsStore.steps.map((step, index) => (
-        <>
+        <div key={step.id} className="flex items-center">
           {index > 0 && <div className={styles.divider} />}
-          <Tooltip key={step.id} title={step.title}>
+          <Tooltip title={step.title}>
             <div
               className={classNames(styles.step, {
                 [styles.activeStep]: stepsStore.activeId === step.id,
@@ -23,7 +23,7 @@ const Steps = observer(() => {
               <step.icon size={20} />
             </div>
           </Tooltip>
-        </>
+        </div>
       ))}
     </div>
   );
