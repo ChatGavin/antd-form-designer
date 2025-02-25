@@ -5,7 +5,7 @@ const { Sider } = Layout;
 
 const App = () => {
   return (
-    <Sider className={styles.sider} width={300} theme="light">
+    <Sider className={styles.layout} width={300}>
       右侧面板
     </Sider>
   );

@@ -3,15 +3,16 @@ import Tabs from "./Tabs";
 import TabContent from "./TabContent";
 //
 import Changelog from "./Changelog";
+import Sider from "antd/es/layout/Sider";
 
 const LeftPanel = () => {
   return (
-    <div className={styles.layout}>
+    <Sider className={styles.layout} width={300}>
       <Tabs />
       <TabContent />
       {/* */}
       <Changelog />
-    </div>
+    </Sider>
   );
 };
 
