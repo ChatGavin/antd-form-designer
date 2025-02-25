@@ -20,7 +20,7 @@ const App = observer(() => {
             })}
           >
             <span className={styles.title}>
-              <Icon size={16} className={styles.icon} />
+              <Icon size={20} className={styles.icon} />
               {tab.title}
             </span>
           </div>
