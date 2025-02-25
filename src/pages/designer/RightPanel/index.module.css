@@ -3,5 +3,5 @@
   flex-direction: column;
   height: 100%;
   background: #fff;
-  border-left: 1px solid #d9d9d9;
+  border-left: 1px solid var(--border-color);
 }
