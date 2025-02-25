@@ -4,7 +4,7 @@ import styles from "./index.module.css";
 import { Tooltip } from "antd";
 import classNames from "classnames";
 
-const Steps = observer(() => {
+const App = observer(() => {
   const { designerStore } = rootStore;
   const { stepsStore } = designerStore;
 
@@ -29,4 +29,4 @@ const Steps = observer(() => {
   );
 });
 
-export default Steps;
+export default App;

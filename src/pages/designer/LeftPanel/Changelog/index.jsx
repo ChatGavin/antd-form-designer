@@ -2,7 +2,7 @@ import { Modal } from "antd";
 import { observer } from "mobx-react-lite";
 import rootStore from "@/stores/index.js";
 
-const Changelog = observer(() => {
+const App = observer(() => {
   const { designerStore } = rootStore;
   const visible = designerStore.dialogStore.getState("changelog");
 
@@ -18,4 +18,4 @@ const Changelog = observer(() => {
   );
 });
 
-export default Changelog;
+export default App;

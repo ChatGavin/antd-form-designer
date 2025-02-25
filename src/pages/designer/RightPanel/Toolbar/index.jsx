@@ -3,7 +3,7 @@ import { observer } from "mobx-react-lite";
 import rootStore from "@/stores/index.js";
 import classNames from "classnames";
 
-const Toolbar = observer(() => {
+const App = observer(() => {
   const { designerStore } = rootStore;
   const { toolbarStore } = designerStore;
 
@@ -30,4 +30,4 @@ const Toolbar = observer(() => {
   );
 });
 
-export default Toolbar;
+export default App;

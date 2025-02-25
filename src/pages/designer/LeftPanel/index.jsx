@@ -5,7 +5,7 @@ import TabContent from "./TabContent";
 import Changelog from "./Changelog";
 import Sider from "antd/es/layout/Sider";
 
-const LeftPanel = () => {
+const App = () => {
   return (
     <Sider className={styles.layout} width={300}>
       <Tabs />
@@ -16,4 +16,4 @@ const LeftPanel = () => {
   );
 };
 
-export default LeftPanel;
+export default App;
