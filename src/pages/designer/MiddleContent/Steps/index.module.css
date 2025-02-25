@@ -6,7 +6,6 @@
   justify-content: center;
   box-sizing: border-box;
   gap: 5px;
-  border-bottom: 1px dashed var(--border-color);
   background: #fff;
 }
 
