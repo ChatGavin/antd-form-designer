@@ -1,6 +1,8 @@
+import Toolbar from "./Toolbar/index.jsx";
+import ToolbarContent from "./ToolbarContent/index.jsx";
+//
 import { Layout } from "antd";
 import styles from "./index.module.css";
-import { Toolbar, ToolbarContent } from "./index";
 
 const { Sider } = Layout;
 

@@ -1,8 +1,9 @@
+import Steps from "./Steps/index.jsx";
+import Workspace from "./Workspace/index.jsx";
+import Footer from "./Footer/index.jsx";
+//
 import { Layout } from "antd";
 import styles from "./index.module.css";
-import { Steps } from "./index.js";
-import { Workspace } from "./index.js";
-import { Footer } from "./index.js";
 
 const { Content } = Layout;
 

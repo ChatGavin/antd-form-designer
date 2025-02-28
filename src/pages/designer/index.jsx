@@ -1,6 +1,10 @@
+import Header from "./Header/index.jsx";
+import LeftPanel from "./LeftPanel/index.jsx";
+import MiddleContent from "./MiddleContent/index.jsx";
+import RightPanel from "./RightPanel/index.jsx";
+//
 import styles from "./index.module.css";
 import { Layout } from "antd";
-import { Header, LeftPanel, MiddleContent, RightPanel } from "./index.js";
 
 const App = () => {
   return (

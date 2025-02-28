@@ -1,8 +1,8 @@
-import styles from "./index.module.css";
 import Tabs from "./Tabs/index.jsx";
 import TabContent from "./TabContent/index.jsx";
-//
 import Changelog from "./Changelog/index.jsx";
+//
+import styles from "./index.module.css";
 import Sider from "antd/es/layout/Sider";
 
 const App = () => {

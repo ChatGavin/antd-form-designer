@@ -1,6 +1,7 @@
+import Brand from "./Brand/index.jsx";
+//
 import { Layout } from "antd";
 import styles from "./index.module.css";
-import { Brand } from "./index.js";
 
 const { Header } = Layout;
 
