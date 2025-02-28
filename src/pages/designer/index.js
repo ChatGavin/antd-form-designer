@@ -1,7 +1,7 @@
 // 导出设计器主模块组件
-export { default as Header } from "@/pages/designer/Header";
-export { default as LeftPanel } from "@/pages/designer/LeftPanel";
-export { default as MiddleContent } from "@/pages/designer/MiddleContent";
-export { default as RightPanel } from "@/pages/designer/RightPanel";
+export { default as Header } from "./Header/index.jsx";
+export { default as LeftPanel } from "./LeftPanel/index.jsx";
+export { default as MiddleContent } from "./MiddleContent/index.jsx";
+export { default as RightPanel } from "./RightPanel/index.jsx";
 // 导出 Designer 组件
-export { default } from "@/pages/designer/index.jsx";
+export { default } from "./index.jsx";
