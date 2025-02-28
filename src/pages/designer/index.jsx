@@ -1,5 +1,5 @@
 import Header from "./header/index.jsx";
-import LeftPanel from "./leftPanel/index.js";
+import LeftPanel from "./leftPanel/index.jsx";
 import MiddleContent from "./middleContent/index.jsx";
 import RightPanel from "./rightPanel/index.jsx";
 //
