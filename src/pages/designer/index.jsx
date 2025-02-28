@@ -1,7 +1,7 @@
-import Header from "./Header/index.jsx";
-import LeftPanel from "./LeftPanel/index.jsx";
-import MiddleContent from "./MiddleContent/index.jsx";
-import RightPanel from "./RightPanel/index.jsx";
+import Header from "./header/index.jsx";
+import LeftPanel from "./leftPanel/index.jsx";
+import MiddleContent from "./middleContent/index.jsx";
+import RightPanel from "./rightPanel/index.jsx";
 //
 import styles from "./index.module.css";
 import { Layout } from "antd";

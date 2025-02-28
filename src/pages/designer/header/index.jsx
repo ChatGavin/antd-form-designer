@@ -1,4 +1,4 @@
-import Brand from "./Brand/index.jsx";
+import Brand from "./brand/index.jsx";
 //
 import { Layout } from "antd";
 import styles from "./index.module.css";

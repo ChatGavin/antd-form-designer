@@ -1,0 +1,7 @@
+.layout {
+  display: flex;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-right: 1px solid var(--border-color);
+}
