@@ -43,7 +43,7 @@ jobs:
         run: pnpm install
 
       - name: Build project
-        run: pnpm build
+        run: pnpm turbo:build
         working-directory: ./
 
       - name: Upload artifact
