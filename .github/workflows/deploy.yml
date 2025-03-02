@@ -43,7 +43,7 @@ jobs:
         run: pnpm install
 
       - name: Build project (designer)
-        run: pnpm build:designer
+        run: pnpm designer:build
 
       - name: Upload artifact (designer)
         uses: actions/upload-pages-artifact@v3
