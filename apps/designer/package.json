@@ -2,6 +2,7 @@
   "name": "designer",
   "private": true,
   "version": "1.0.0",
+  "description": "表单设计器",
   "type": "module",
   "scripts": {
     "dev": "vite",
