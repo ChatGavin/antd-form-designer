@@ -26,10 +26,12 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # 先安装 pnpm，确保能够正确找到 pnpm 可执行文件
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
           version: 10
+          run_install: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
