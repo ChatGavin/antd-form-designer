@@ -2,7 +2,7 @@ name: Antd Form Designer Deploy
 
 on:
   push:
-    branches: ["master", "qiankun-turbo"]
+    branches: ["master", "qiankun-turborepo"]
   workflow_dispatch:
 
 permissions:
