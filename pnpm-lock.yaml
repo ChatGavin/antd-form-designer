@@ -7,6 +7,12 @@ settings:
 importers:
 
   .:
+    devDependencies:
+      turbo:
+        specifier: ^2.4.4
+        version: 2.4.4
+
+  apps/designer:
     dependencies:
       '@ant-design/x':
         specifier: ^1.0.5
@@ -41,9 +47,6 @@ importers:
       tailwindcss:
         specifier: ^4.0.8
         version: 4.0.9
-      turbo:
-        specifier: ^2.4.4
-        version: 2.4.4
     devDependencies:
       '@eslint/js':
         specifier: ^9.19.0

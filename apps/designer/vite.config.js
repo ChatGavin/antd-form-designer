@@ -11,6 +11,9 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: "/", // 如果是部署到 github pages，需要设置为 /<repo-name>/
+  build: {
+    outDir: path.resolve(__dirname, "./dist"),
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
