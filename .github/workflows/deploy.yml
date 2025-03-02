@@ -42,14 +42,13 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build project
-        run: pnpm turbo:build
-        working-directory: ./
+      - name: Build project (designer)
+        run: pnpm build:designer
 
-      - name: Upload artifact
+      - name: Upload artifact (designer)
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./apps/designer/dist
 
   deploy:
     environment:
