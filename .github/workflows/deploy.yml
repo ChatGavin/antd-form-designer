@@ -2,7 +2,7 @@ name: Antd Form Designer Deploy
 
 on:
   push:
-    branches: ["master"]
+    branches: ["master", "qiankun-turbo"]
   workflow_dispatch:
 
 permissions:
@@ -32,14 +32,14 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Install yarn
-        run: npm install -g yarn
+      - name: Install pnpm
+        run: npm install -g pnpm
 
       - name: Install dependencies
-        run: yarn install
+        run: pnpm install
 
       - name: Build project
-        run: yarn build
+        run: pnpm build
         working-directory: ./
 
       - name: Upload artifact
