@@ -20,7 +20,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 8000,
+    port: 8010,
     open: true,
     proxy: {
       "/api/ollama": {
