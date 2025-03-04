@@ -1,11 +1,16 @@
-#
+# 通用忽略
 node_modules
-#
-dist
-#
 .DS_Store
 .vscode
 .idea
 .turbo
 
+# 文档相关忽略
+**/docs/.vitepress/cache
+**/docs/.vitepress/dist
+apps/docs/.vitepress/cache
+apps/docs/.vitepress/dist
+
+# 设计器相关忽略
+**/apps/designer/dist
 
