@@ -6,11 +6,15 @@ node_modules
 .turbo
 
 # 文档相关忽略
-**/docs/.vitepress/cache
-**/docs/.vitepress/dist
 apps/docs/.vitepress/cache
 apps/docs/.vitepress/dist
 
+# 管理后台相关忽略
+apps/admin/dist
+
 # 设计器相关忽略
-**/apps/designer/dist
+apps/designer/dist
+
+
+
 
