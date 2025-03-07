@@ -45,10 +45,18 @@ jobs:
       - name: Build project (designer)
         run: pnpm designer:build
 
+      - name: Build project (docs)
+        run: pnpm docs:build
+
       - name: Upload artifact (designer)
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./apps/designer/dist
+
+      - name: Upload artifact (docs)
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./apps/docs/.vitepress/dist
 
   deploy:
     environment:
