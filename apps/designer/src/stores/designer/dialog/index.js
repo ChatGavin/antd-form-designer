@@ -2,9 +2,7 @@ import { makeAutoObservable } from "mobx";
 
 class DialogStore {
   // 管理设计器所有弹窗状态
-  states = {
-    changelog: false,
-  };
+  states = {};
 
   constructor() {
     makeAutoObservable(this);

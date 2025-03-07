@@ -1,6 +1,5 @@
 import { makeAutoObservable } from "mobx";
-import { LayoutGrid, FileJson, Route, Github } from "lucide-react";
-import rootStore from "@/stores/index";
+import { LayoutGrid, FileJson, Book, Github } from "lucide-react";
 
 class TabsStore {
   topTabs = [
@@ -18,9 +17,10 @@ class TabsStore {
 
   bottomTabs = [
     {
-      id: "changelog",
-      title: "版本更新",
-      icon: Route,
+      id: "docs",
+      title: "产品文档",
+      icon: Book,
+      url: "https://designer.gavin.chat/docs",
     },
     {
       id: "github",
@@ -44,10 +44,8 @@ class TabsStore {
 
   // 处理快捷工具栏点击
   handleQuickTool(tab) {
-    if (tab.id === "github") {
+    if (tab.url) {
       window.open(tab.url, "_blank");
-    } else if (tab.id === "changelog") {
-      rootStore.designerStore.dialogStore.show("changelog");
     }
   }
 }
