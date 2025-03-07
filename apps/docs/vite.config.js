@@ -7,11 +7,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // https://vite.dev/config/
 export default defineConfig({
   base: "/docs/",
-  build: {
-    outDir: path.resolve(__dirname, "./dist"),
-  },
   server: {
-    port: 8020,
+    port: 9000,
     open: true,
   },
 });
