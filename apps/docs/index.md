@@ -3,9 +3,12 @@
 layout: home
 
 hero:
-  name: "表单设计器文档"
+  name: "Antd Form Designer"
   text: "表单设计器文档"
-  tagline: My great project tagline
+  tagline: 基于 Ant Design & 探索 AI 在表单设计中的应用
+  image:
+    src: /icon/doc.png
+    alt: Form Designer Logo
   actions:
     - theme: brand
       text: Markdown Examples
@@ -22,4 +25,3 @@ features:
   - title: Feature C
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-
