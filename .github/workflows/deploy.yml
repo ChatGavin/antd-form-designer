@@ -48,17 +48,18 @@ jobs:
       - name: Build project (docs)
         run: pnpm docs:build
 
-      - name: Upload artifact (designer)
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./apps/designer/dist
-          name: designer-artifact-${{ github.run_id }}
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p deployment
+          cp -r ./apps/designer/dist/* deployment/
+          mkdir -p deployment/docs
+          cp -r ./apps/docs/.vitepress/dist/* deployment/docs/
 
-      - name: Upload artifact (docs)
+      - name: Upload combined artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./apps/docs/.vitepress/dist
-          name: docs-artifact-${{ github.run_id }}
+          path: ./deployment
+          name: combined-artifact-${{ github.run_id }}
 
   deploy:
     environment:
@@ -71,4 +72,4 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
         with:
-          artifact_name: designer-artifact-${{ github.run_id }}
+          artifact_name: combined-artifact-${{ github.run_id }}
