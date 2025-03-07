@@ -52,11 +52,13 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./apps/designer/dist
+          name: designer-artifact-${{ github.run_id }}
 
       - name: Upload artifact (docs)
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./apps/docs/.vitepress/dist
+          name: docs-artifact-${{ github.run_id }}
 
   deploy:
     environment:
