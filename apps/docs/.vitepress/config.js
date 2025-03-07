@@ -1,6 +1,6 @@
 export default {
   base: "/docs/", // 在 vite.config.js 中配置的 base 会被覆盖, 最终以这份为准
-  title: "表单设计器文档",
+  title: "Antd Form Designer",
   description: "表单设计器文档",
   // 配置 favicon 和其他头部标签
   head: [
