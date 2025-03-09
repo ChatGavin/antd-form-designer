@@ -10,7 +10,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: "/", // 如果是部署到 github pages，需要设置为 /<repo-name>/
+  base: "/editor/", // 如果是部署到 github pages，需要设置为 /<repo-name>/
   build: {
     outDir: path.resolve(__dirname, "./dist"),
   },
