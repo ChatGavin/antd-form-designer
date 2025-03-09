@@ -7,7 +7,7 @@ hero:
   text: "表单设计器文档"
   tagline: 基于 Ant Design & 探索 AI 在表单设计中的应用
   image:
-    src: /icon/doc.png
+    src: /logo/docs.png
     alt: Form Designer Logo
   actions:
     - theme: brand
