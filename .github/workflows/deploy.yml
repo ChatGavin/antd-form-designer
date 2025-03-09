@@ -42,8 +42,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: Build project (designer)
-        run: pnpm designer:build
+      - name: Build project (admin)
+        run: pnpm admin:build
+
+      - name: Build project (editor)
+        run: pnpm editor:build
 
       - name: Build project (docs)
         run: pnpm docs:build
@@ -51,7 +54,9 @@ jobs:
       - name: Prepare deployment directory
         run: |
           mkdir -p deployment
-          cp -r ./apps/designer/dist/* deployment/
+          cp -r ./apps/admin/dist/* deployment/
+          mkdir -p deployment/editor
+          cp -r ./apps/editor/dist/* deployment/editor/
           mkdir -p deployment/docs
           cp -r ./apps/docs/.vitepress/dist/* deployment/docs/
 
