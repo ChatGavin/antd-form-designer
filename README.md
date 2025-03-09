@@ -4,7 +4,7 @@
 
 <h1>Antd Form Designer</h1>
 
-Antd Form Designer 是一个基于 Ant Design 的表单设计器, 旨在探索 AI 在表单设计中的应用, 帮助开发者轻松地构建表单.
+Antd Form Designer 是一套完整的表单解决方案, 致力于探索 AI 在表单设计中的应用.
 
 [![UI - Ant Design](https://img.shields.io/badge/UI-Ant%20Design-1890FF?style=flat-square&logo=ant-design&logoColor=white)](https://ant.design)
 [![Build With Vite](https://img.shields.io/badge/Build%20with-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
