@@ -12,15 +12,27 @@ Antd Form Designer 是一套完整的表单解决方案, 致力于探索 AI 在�
 [![Docs By VitePress](https://img.shields.io/badge/Docs%20by-VitePress-42b883?style=flat-square&logo=markdown)](https://vitepress.dev)
 
 <div align="center" style="margin: 20px 0">
-  <a href="https://qiankun.umijs.org/" target="_blank" style="margin-right: 40px; text-decoration: none;">
-    <img src="https://designer.gavin.chat/docs/img/website/qiankun.svg" alt="qiankun" width="120" />
-  </a>
-  <a href="https://turbo.build/" target="_blank" style="margin: 0 40px; text-decoration: none;">
-    <img src="https://designer.gavin.chat/docs/img/website/turbo.svg" alt="Turborepo" width="120" />
-  </a>
-  <a href="https://pnpm.io/" target="_blank" style="margin-left: 40px; text-decoration: none;">
-    <img src="https://designer.gavin.chat/docs/img/website/pnpm.svg" alt="pnpm" width="120" />
-  </a>
+  <p align="center">
+    <table>
+        <tr>
+            <td align="center" width="200">
+                <img src="https://designer.gavin.chat/docs/img/website/qiankun.svg" alt="qiankun" width="120" height="120">
+                <br>
+                <a href="https://qiankun.umijs.org/" target="_blank">qiankun</a>
+                </td>
+                <td align="center" width="200">
+                <img src="https://designer.gavin.chat/docs/img/website/turbo.svg" alt="Turborepo" width="120" height="120">
+                <br>
+                <a href="https://turbo.build/" target="_blank">Turborepo</a>
+                </td>
+                <td align="center" width="200">
+                <img src="https://designer.gavin.chat/docs/img/website/pnpm.svg" alt="pnpm" width="120" height="120">
+                <br>
+                <a href="https://pnpm.io/" target="_blank">pnpm</a>
+            </td>
+        </tr>
+    </table>
+  </p>
 </div>
 
 </div>
