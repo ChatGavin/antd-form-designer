@@ -2,7 +2,7 @@ import Tabs from "./tabs/index.jsx";
 import TabContent from "./tabContent/index.jsx";
 //
 import styles from "./index.module.css";
-import Sider from "antd/es/layout/Sider";
+import Sider from "antd/es/layout/Sider.js";
 
 const App = () => {
   return (
