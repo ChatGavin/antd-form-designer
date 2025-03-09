@@ -21,10 +21,12 @@
   "packageManager": "pnpm@10.5.2",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "designer:dev": "turbo run dev --filter designer",
-    "designer:build": "turbo run build --filter designer",
+    "admin:dev": "turbo run dev --filter admin",
+    "admin:build": "turbo run build --filter admin",
     "docs:dev": "turbo run dev --filter docs",
-    "docs:build": "turbo run build --filter docs"
+    "docs:build": "turbo run build --filter docs",
+    "editor:dev": "turbo run dev --filter editor",
+    "editor:build": "turbo run build --filter editor"
   },
   "devDependencies": {
     "turbo": "^2.4.4"
