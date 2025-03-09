@@ -13,10 +13,10 @@ Antd Form Designer 是一个基于 Ant Design 的表单设计器, 旨在探索 A
 
 <div align="center" style="margin: 20px 0">
   <a href="https://qiankun.umijs.org/" target="_blank" style="margin-right: 20px">
-    <img src="https://designer.gavin.chat/docs/img/website/qiankun.png" alt="qiankun" width="120" />
+    <img src="https://designer.gavin.chat/docs/img/website/qiankun.svg" alt="qiankun" width="120" />
   </a>
   <a href="https://turbo.build/" target="_blank" style="margin: 0 20px">
-    <img src="https://designer.gavin.chat/docs/img/website/turborepo.svg" alt="Turborepo" width="120" />
+    <img src="https://designer.gavin.chat/docs/img/website/turbo.svg" alt="Turborepo" width="120" />
   </a>
   <a href="https://pnpm.io/" target="_blank" style="margin-left: 20px">
     <img src="https://designer.gavin.chat/docs/img/website/pnpm.svg" alt="pnpm" width="120" />
