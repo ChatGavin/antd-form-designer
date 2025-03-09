@@ -1,8 +1,27 @@
-# Antd Form Designer
+<div align="center"><a name="readme-top"></a>
 
-## 项目介绍
+<img height="180" src="https://designer.gavin.chat/docs/img/logo/editor.png">
+
+<h1>Antd Form Designer</h1>
 
 Antd Form Designer 是一个基于 Ant Design 的表单设计器, 旨在探索 AI 在表单设计中的应用, 帮助开发者轻松地构建表单.
+
+[![UI - Ant Design](https://img.shields.io/badge/UI-Ant%20Design-1890FF?style=flat-square&logo=ant-design&logoColor=white)](https://ant.design)
+[![Build With Vite](https://img.shields.io/badge/Build%20with-Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev)
+[![Deploy](https://img.shields.io/badge/Deploy-GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/features/actions)
+[![Docs By VitePress](https://img.shields.io/badge/Docs%20by-VitePress-42b883?style=flat-square&logo=markdown)](https://vitepress.dev)
+
+<div align="center" style="margin: 20px 0">
+  <a href="https://qiankun.umijs.org/" target="_blank" style="margin-right: 20px">
+    <img src="https://designer.gavin.chat/docs/img/website/qiankun.png" alt="qiankun" width="120" />
+  </a>
+  <a href="https://turbo.build/" target="_blank" style="margin: 0 20px">
+    <img src="https://designer.gavin.chat/docs/img/website/turborepo.svg" alt="Turborepo" width="120" />
+  </a>
+  <a href="https://pnpm.io/" target="_blank" style="margin-left: 20px">
+    <img src="https://designer.gavin.chat/docs/img/website/pnpm.svg" alt="pnpm" width="120" />
+  </a>
+</div>
 
 预览地址: [https://designer.gavin.chat](https://designer.gavin.chat)
 
