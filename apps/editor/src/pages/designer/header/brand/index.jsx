@@ -1,5 +1,5 @@
 import styles from "./index.module.css";
-import logo from "@/assets/logo/design.png";
+import logo from "@/assets/logo/editor.png";
 
 const App = () => {
   return (
