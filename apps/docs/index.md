@@ -4,8 +4,9 @@ layout: home
 
 hero:
   name: "Antd Form Designer"
-  text: "表单设计器文档"
-  tagline: 基于 Ant Design & 探索 AI 在表单设计中的应用
+  text: "表单解决方案 & AI 在表单设计中的应用"
+  tagline: Antd Form Designer 是一套完整的表单解决方案, 致力于探索 AI 在表单设计中的应用
+
   image:
     src: /img/logo/docs.png
     alt: Form Designer Logo
