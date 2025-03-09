@@ -4,7 +4,7 @@ export default {
   description: "表单设计器文档",
   // 配置 favicon 和其他头部标签
   head: [
-    ["link", { rel: "icon", href: "/docs/logo/docs.png" }],
+    ["link", { rel: "icon", href: "/docs/img/logo/docs.png" }],
     // 你也可以添加其他头部标签，如 Apple Touch Icon
     [
       "link",
@@ -18,7 +18,7 @@ export default {
   // 主题配置
   themeConfig: {
     // 设置 logo
-    logo: "/logo/docs.png",
+    logo: "/img/logo/docs.png",
     // 你也可以设置深色模式下的 logo
     // logoDark: "/icon/doc-dark.png",
 
