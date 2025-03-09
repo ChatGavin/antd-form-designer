@@ -13,22 +13,22 @@ Antd Form Designer 是一套完整的表单解决方案, 致力于探索 AI 在�
 
 <div align="center" style="margin: 20px 0">
   <p align="center">
-    <table>
+    <table border="0" style="border-collapse: collapse;">
         <tr>
-            <td align="center" width="200">
+            <td align="center" width="200" style="border: none;">
                 <img src="https://designer.gavin.chat/docs/img/website/qiankun.svg" alt="qiankun" width="120" height="120">
                 <br>
-                <a href="https://qiankun.umijs.org/" target="_blank">qiankun</a>
-                </td>
-                <td align="center" width="200">
+                <a href="https://qiankun.umijs.org/" target="_blank" style="text-decoration: none; color: #666;">qiankun</a>
+            </td>
+            <td align="center" width="200" style="border: none;">
                 <img src="https://designer.gavin.chat/docs/img/website/turbo.svg" alt="Turborepo" width="120" height="120">
                 <br>
-                <a href="https://turbo.build/" target="_blank">Turborepo</a>
-                </td>
-                <td align="center" width="200">
+                <a href="https://turbo.build/" target="_blank" style="text-decoration: none; color: #666;">Turborepo</a>
+            </td>
+            <td align="center" width="200" style="border: none;">
                 <img src="https://designer.gavin.chat/docs/img/website/pnpm.svg" alt="pnpm" width="120" height="120">
                 <br>
-                <a href="https://pnpm.io/" target="_blank">pnpm</a>
+                <a href="https://pnpm.io/" target="_blank" style="text-decoration: none; color: #666;">pnpm</a>
             </td>
         </tr>
     </table>
