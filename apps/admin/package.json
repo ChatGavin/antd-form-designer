@@ -2,7 +2,7 @@
   "name": "admin",
   "private": true,
   "version": "1.0.0",
-  "description": "管理后台",
+  "description": "表单管理后台",
   "type": "module",
   "scripts": {
     "dev": "vite",
