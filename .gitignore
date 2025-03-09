@@ -1,19 +1,17 @@
-# 通用忽略
-node_modules
+# IDE
 .DS_Store
 .vscode
 .idea
 .turbo
 
-# 文档相关忽略
+# Dependencies
+node_modules
+
+# Build
+apps/admin/dist
 apps/docs/.vitepress/cache
 apps/docs/.vitepress/dist
-
-# 管理后台相关忽略
-apps/admin/dist
-
-# 设计器相关忽略
-apps/designer/dist
+apps/editor/dist
 
 
 

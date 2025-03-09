@@ -21,6 +21,8 @@
   "packageManager": "pnpm@10.5.2",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
+    "dev": "turbo run dev --filter=admin... --filter=docs... --filter=editor...",
+    "build": "turbo run build --filter=admin... --filter=docs... --filter=editor...",
     "admin:dev": "turbo run dev --filter admin",
     "admin:build": "turbo run build --filter admin",
     "docs:dev": "turbo run dev --filter docs",
