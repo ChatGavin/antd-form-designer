@@ -43,18 +43,11 @@ Antd Form Designer 是一套完整的表单解决方案, 致力于探索 AI 在�
 
 问题记录: [https://j37q60tldv.feishu.cn/docx/T1oedmX85oOvwexPrYMcRAjfnvh?from=from_copylink](https://j37q60tldv.feishu.cn/docx/T1oedmX85oOvwexPrYMcRAjfnvh?from=from_copylink)
 
-## 功能特性
-
-- **AI 助手**: 通过 AI 助手来设计配置表单.
-- **实时预览**: 在设计过程中实时预览表单效果.
-- **拖拽式设计**: 通过拖拽组件来快速构建表单.
-- **表单配置项**: 通过配置表单的 schema 来快速构建表单.
-
 ## 快速开始
 
 ```bash
-yarn install
-yarn dev
+pnpm install
+pnpm dev
 ```
 
 ## 关于低代码实践
