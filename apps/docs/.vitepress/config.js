@@ -38,7 +38,10 @@ export default {
     // 其他主题配置...
     nav: [
       { text: "首页", link: "/" },
-      { text: "更新日志", link: "/changelog/v0" },
+      {
+        text: "更新日志", // 直接显示更新日志
+        link: "https://github.com/ChatGavin/antd-form-designer/releases",
+      },
     ],
     // 社交链接
     socialLinks: [
