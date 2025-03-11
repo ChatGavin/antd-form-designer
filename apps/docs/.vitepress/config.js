@@ -25,19 +25,8 @@ export default {
     // 其他主题配置...
     nav: [
       { text: "首页", link: "/" },
-      { text: "指南", link: "/guide/" },
+      { text: "更新日志", link: "/changelog/v0" },
     ],
-    sidebar: {
-      "/guide/": [
-        {
-          text: "介绍",
-          items: [
-            { text: "什么是表单设计器", link: "/guide/what-is" },
-            { text: "快速开始", link: "/guide/getting-started" },
-          ],
-        },
-      ],
-    },
     // 社交链接
     socialLinks: [
       {
@@ -45,5 +34,16 @@ export default {
         link: "https://github.com/ChatGavin/antd-form-designer",
       },
     ],
+    // 右侧目录配置
+    outlineTitle: "目录",
+    // 左侧目录配置
+    sidebar: {
+      "/changelog/": [
+        {
+          text: "更新日志",
+          items: [{ text: "0.x", link: "/changelog/v0" }],
+        },
+      ],
+    },
   },
 };

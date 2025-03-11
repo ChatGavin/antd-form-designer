@@ -12,11 +12,11 @@ hero:
     alt: Form Designer Logo
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 快速开始
+      link: /guide/getting-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 在线预览
+      link: https://designer.gavin.chat
 
 features:
   - title: 前端工程化
