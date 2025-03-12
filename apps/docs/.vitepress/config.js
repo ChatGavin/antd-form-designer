@@ -11,7 +11,11 @@ export default {
   },
   // 配置 favicon 和其他头部标签
   head: [
-    ["link", { rel: "icon", href: "/docs/img/logo/docs.png" }],
+    [
+      "meta",
+      { name: "algolia-site-verification", content: "924923ED6C3EC231" },
+    ],
+    [("link", { rel: "icon", href: "/docs/img/logo/docs.png" })],
     // 你也可以添加其他头部标签，如 Apple Touch Icon
     [
       "link",
