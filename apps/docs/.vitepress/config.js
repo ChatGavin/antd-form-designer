@@ -11,12 +11,11 @@ export default {
   },
   // 配置 favicon 和其他头部标签
   head: [
-    [
-      "meta",
-      { name: "algolia-site-verification", content: "924923ED6C3EC231" },
-    ],
-    [("link", { rel: "icon", href: "/docs/img/logo/docs.png" })],
-    // 你也可以添加其他头部标签，如 Apple Touch Icon
+    // [
+    //   "meta",
+    //   { name: "algolia-site-verification", content: "924923ED6C3EC231" },
+    // ],
+    ["link", { rel: "icon", href: "/docs/img/logo/docs.png" }],
     [
       "link",
       {
@@ -26,7 +25,6 @@ export default {
       },
     ],
   ],
-  // 主题配置
   themeConfig: {
     // 设置 logo
     logo: "/img/logo/docs.png",
@@ -69,6 +67,31 @@ export default {
           items: [{ text: "0.x", link: "/changelog/v0" }],
         },
       ],
+    },
+    // 添加 Algolia 搜索配置
+    algolia: {
+      appId: "BY3PPJ4B38",
+      apiKey: "58414decdc73fcf81475dfab24620d22",
+      indexName: "antd-form-designer",
+      searchParameters: {
+        ranking: [
+          "typo",
+          "geo",
+          "words",
+          "filters",
+          "proximity",
+          "attribute",
+          "exact",
+          "custom",
+        ],
+        searchableAttributes: [
+          "title",
+          "description",
+          "keywords",
+          "content",
+          "url",
+        ],
+      },
     },
   },
 };
