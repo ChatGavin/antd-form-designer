@@ -2,9 +2,20 @@ export default {
   base: "/docs/", // 在 vite.config.js 中配置的 base 会被覆盖, 最终以这份为准
   title: "Antd Form Designer",
   description: "表单设计器文档",
+  // 日期格式化配置
+  lastUpdated: {
+    formatOptions: {
+      dateStyle: "full",
+      timeStyle: "medium",
+    },
+  },
   // 配置 favicon 和其他头部标签
   head: [
-    ["link", { rel: "icon", href: "/docs/img/logo/docs.png" }],
+    [
+      "meta",
+      { name: "algolia-site-verification", content: "924923ED6C3EC231" },
+    ],
+    [("link", { rel: "icon", href: "/docs/img/logo/docs.png" })],
     // 你也可以添加其他头部标签，如 Apple Touch Icon
     [
       "link",
@@ -19,25 +30,23 @@ export default {
   themeConfig: {
     // 设置 logo
     logo: "/img/logo/docs.png",
-    // 你也可以设置深色模式下的 logo
-    // logoDark: "/icon/doc-dark.png",
-
+    // 启用最后更新时间
+    lastUpdated: true,
+    // 自定义最后更新时间的文本
+    lastUpdatedText: "最后更新",
+    // 配置日期格式
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
     // 其他主题配置...
     nav: [
       { text: "首页", link: "/" },
-      { text: "指南", link: "/guide/" },
+      {
+        text: "更新日志", // 直接显示更新日志
+        link: "https://github.com/ChatGavin/antd-form-designer/releases",
+      },
     ],
-    sidebar: {
-      "/guide/": [
-        {
-          text: "介绍",
-          items: [
-            { text: "什么是表单设计器", link: "/guide/what-is" },
-            { text: "快速开始", link: "/guide/getting-started" },
-          ],
-        },
-      ],
-    },
     // 社交链接
     socialLinks: [
       {
@@ -45,5 +54,21 @@ export default {
         link: "https://github.com/ChatGavin/antd-form-designer",
       },
     ],
+    // 页脚配置
+    footer: {
+      message: "Released under the MIT License.",
+      copyright: "Copyright © 2025-present Gavin Lin",
+    },
+    // 右侧目录配置
+    outlineTitle: "目录",
+    // 左侧目录配置
+    sidebar: {
+      "/changelog/": [
+        {
+          text: "更新日志",
+          items: [{ text: "0.x", link: "/changelog/v0" }],
+        },
+      ],
+    },
   },
 };
