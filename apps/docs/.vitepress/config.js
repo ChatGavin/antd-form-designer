@@ -2,19 +2,12 @@ export default {
   base: "/docs/", // 在 vite.config.js 中配置的 base 会被覆盖, 最终以这份为准
   title: "Antd Form Designer",
   description: "表单设计器文档",
+  // 启用 Git 插件
+  lastUpdated: true,
   // 日期格式化配置
-  lastUpdated: {
-    formatOptions: {
-      dateStyle: "full",
-      timeStyle: "medium",
-    },
-  },
+  lastUpdatedText: "最后更新于",
   // 配置 favicon 和其他头部标签
   head: [
-    // [
-    //   "meta",
-    //   { name: "algolia-site-verification", content: "924923ED6C3EC231" },
-    // ],
     ["link", { rel: "icon", href: "/docs/img/logo/docs.png" }],
     [
       "link",
@@ -37,11 +30,11 @@ export default {
       prev: "上一页",
       next: "下一页",
     },
-    // 其他主题配置...
     nav: [
       { text: "首页", link: "/" },
+      { text: "AI 技术", link: "/aiTech/" },
       {
-        text: "更新日志", // 直接显示更新日志
+        text: "更新日志",
         link: "https://github.com/ChatGavin/antd-form-designer/releases",
       },
     ],
@@ -56,17 +49,6 @@ export default {
     footer: {
       message: "Released under the MIT License.",
       copyright: "Copyright © 2025-present Gavin Lin",
-    },
-    // 右侧目录配置
-    outlineTitle: "目录",
-    // 左侧目录配置
-    sidebar: {
-      "/changelog/": [
-        {
-          text: "更新日志",
-          items: [{ text: "0.x", link: "/changelog/v0" }],
-        },
-      ],
     },
     // 添加 Algolia 搜索配置
     algolia: {
@@ -92,6 +74,17 @@ export default {
           "url",
         ],
       },
+    },
+    // 右侧目录配置
+    outlineTitle: "目录",
+    // 左侧目录配置
+    sidebar: {
+      "/aiTech/": [
+        {
+          text: "AI 技术",
+          link: "/aiTech/",
+        },
+      ],
     },
   },
 };
