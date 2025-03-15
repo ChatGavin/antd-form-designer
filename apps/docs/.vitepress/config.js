@@ -2,10 +2,6 @@ export default {
   base: "/docs/", // 在 vite.config.js 中配置的 base 会被覆盖, 最终以这份为准
   title: "Antd Form Designer",
   description: "表单设计器文档",
-  // 启用 Git 插件
-  lastUpdated: true,
-  // 日期格式化配置
-  lastUpdatedText: "最后更新于",
   // 配置 favicon 和其他头部标签
   head: [
     ["link", { rel: "icon", href: "/docs/img/logo/docs.png" }],
@@ -21,10 +17,6 @@ export default {
   themeConfig: {
     // 设置 logo
     logo: "/img/logo/docs.png",
-    // 启用最后更新时间
-    lastUpdated: true,
-    // 自定义最后更新时间的文本
-    lastUpdatedText: "最后更新",
     // 配置日期格式
     docFooter: {
       prev: "上一页",
@@ -50,31 +42,6 @@ export default {
       message: "Released under the MIT License.",
       copyright: "Copyright © 2025-present Gavin Lin",
     },
-    // 添加 Algolia 搜索配置
-    algolia: {
-      appId: "BY3PPJ4B38",
-      apiKey: "58414decdc73fcf81475dfab24620d22",
-      indexName: "antd-form-designer",
-      searchParameters: {
-        ranking: [
-          "typo",
-          "geo",
-          "words",
-          "filters",
-          "proximity",
-          "attribute",
-          "exact",
-          "custom",
-        ],
-        searchableAttributes: [
-          "title",
-          "description",
-          "keywords",
-          "content",
-          "url",
-        ],
-      },
-    },
     // 右侧目录配置
     outlineTitle: "目录",
     // 左侧目录配置
@@ -85,6 +52,12 @@ export default {
           link: "/aiTech/",
         },
       ],
+    },
+    // 添加 Algolia 搜索配置
+    algolia: {
+      appId: "BY3PPJ4B38",
+      apiKey: "58414decdc73fcf81475dfab24620d22",
+      indexName: "antd-form-designer",
     },
   },
 };
