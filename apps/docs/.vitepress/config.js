@@ -17,6 +17,10 @@ export default {
   themeConfig: {
     // 设置 logo
     logo: "/img/logo/docs.png",
+    // 启用最后更新时间
+    lastUpdated: true,
+    // 自定义最后更新时间的文本
+    lastUpdatedText: "最后更新于",
     // 配置日期格式
     docFooter: {
       prev: "上一页",
