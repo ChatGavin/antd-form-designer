@@ -43,7 +43,7 @@ export default {
     ],
     // 页脚配置
     footer: {
-      message: "Released under the MIT License.",
+      message: "Released under the MIT License",
       copyright: "Copyright © 2025-present Gavin Lin",
     },
     // 右侧目录配置
