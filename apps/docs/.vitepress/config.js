@@ -61,7 +61,7 @@ export default {
     algolia: {
       appId: "BY3PPJ4B38",
       apiKey: "58414decdc73fcf81475dfab24620d22",
-      indexName: "antd-form-designer",
+      indexName: "designer_gavin_chat_by3ppj4b38_pages",
     },
   },
 };
