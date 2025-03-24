@@ -17,6 +17,10 @@ export default {
   themeConfig: {
     // 设置 logo
     logo: "/img/logo/docs.png",
+    // 启用最后更新时间
+    lastUpdated: true,
+    // 自定义最后更新时间的文本
+    lastUpdatedText: "最后更新于",
     // 配置日期格式
     docFooter: {
       prev: "上一页",
@@ -39,7 +43,7 @@ export default {
     ],
     // 页脚配置
     footer: {
-      message: "Released under the MIT License.",
+      message: "Released under the MIT License",
       copyright: "Copyright © 2025-present Gavin Lin",
     },
     // 右侧目录配置
@@ -57,7 +61,7 @@ export default {
     algolia: {
       appId: "BY3PPJ4B38",
       apiKey: "58414decdc73fcf81475dfab24620d22",
-      indexName: "antd-form-designer",
+      indexName: "designer_gavin_chat_by3ppj4b38_pages",
     },
   },
 };
